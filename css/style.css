@@ -3,40 +3,37 @@
   padding: 0;
 }
 *,
-
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: bold;
 }
 
 .header-top {
   background: #0aaaa0 none repeat scroll 0 0;
   line-height: 40px;
-
 }
+
 
 .container {
   color: #fff;
   display: flex;
   width: 100%;
-  padding:0  15px;
-  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
   justify-content: space-around;
   align-items: center;
 }
 
-.container img {
+.header-top .container img {
   filter: invert(100%);
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   margin: -0.32rem 0.1rem;
 }
 
-.contact {
-  display: flex;
-  justify-content: space-between;
-}
 .container .contact > div a {
   color: #fff;
   text-decoration: none;
@@ -46,7 +43,61 @@ body {
   padding: 0 0.5rem;
 }
 
+.row {
+  flex-wrap: wrap;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.main-logo {
+  padding: 27px 0px;
+}
+
+/* .main-logo img {
+  height: 80px;
+} */
+
+.main-menu {
+  padding: 13px 32px;
+  margin: 15px 57px;
+}
+.main-menu li {
+  float: left;
+  padding: 15px 17px;
+  position: relative;
+}
+.main-menu li a {
+  color: rgb(116, 103, 103);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: normal;
+}
+.donate-button {
+  float: right;
+}
+.donate-button a {
+  text-decoration: none;
+  background: #0aaaa0 none repeat scroll 0 0;
+  border: 1px solid #0aaaa0;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+
+/* utility classess */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* @media (min-width: 1200px)
 .container, .container-lg, .container-md, .container-sm, .container-xl {
   max-width: 1140px;
 } */
+
+.help {
+  background: black;
+}
