@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.header-top {
+  background: #0aaaa0 none repeat scroll 0 0;
+  line-height: 40px;
+
+}
+
+.container {
+  color: #fff;
+  display: flex;
+  width: 100%;
+  padding:0  15px;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container img {
+  filter: invert(100%);
+  width: 20px;
+  height: 20px;
+  margin: -0.32rem 0.1rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+.container .contact > div a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container .contact div {
+  padding: 0 0.5rem;
+}
+
+/* @media (min-width: 1200px)
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+  max-width: 1140px;
+} */
