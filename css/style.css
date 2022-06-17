@@ -75,10 +75,15 @@ a {
   align-items: center;
 }
 
-.column33 {
+.column3 {
   max-width: 33.33%;
   padding-right: 15px;
-padding-left: 15px;
+  padding-left: 15px;
+}
+.column4 {
+  max-width: 25%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 /* common css */
@@ -151,11 +156,11 @@ padding-left: 15px;
   text-transform: uppercase;
 }
 
-.our-couses-area {
+.our-causes-area, .our-causes-area {
   padding: 90px 0;
 }
 
-.couses-title {
+.causes-title, .Volunteer-tittle {
   width: 100%;
   margin-bottom: 40px;
   color: #333333;
@@ -163,7 +168,7 @@ padding-left: 15px;
   margin-top: 10px;
   flex-direction: column;
 }
-.couses-title h2 {
+.causes-title h2, .Volunteer-tittle h2 {
   color: #1b1b1b;
   font-size: 36px;
   font-weight: bold;
@@ -172,24 +177,24 @@ padding-left: 15px;
   text-transform: uppercase;
 }
 
-.couses-title h2 span {
+.causes-title h2 span, .Volunteer-tittle h2 span {
   color: #0aaaa0;
   font-size: 36px;
 }
 
-.single-couses {
+.single-causes, .single-volunteer {
   display: block;
   margin-bottom: -5px;
   overflow: hidden;
 }
 
-.couses-image img {
+.causes-image img , .volunteer-image img{
   max-width: 100%;
   height: auto;
   border-style: none;
   vertical-align: middle;
 }
-.couses-text {
+.causes-text {
   background: #f1f1f1 none repeat scroll 0 0;
   display: block;
   margin-bottom: 30px;
@@ -197,23 +202,24 @@ padding-left: 15px;
   padding: 40px 25px;
 }
 
-.couses-text h3 {
+.causes-text h3, .volunteer-text h3 {
   color: #1b1b1b;
   font-size: 18px;
   font-weight: bold;
 }
 
-.couses-text.text-center > p {
+.causes-text.text-center > p,
+.volunteer-text.text-center > p {
   color: #333;
   font-size: 13px;
   margin-bottom: 0;
 }
-.couses-button{
+.causes-button {
   float: left;
-width: 40%;
+  width: 40%;
 }
 
-.couses-price{
+.causes-price {
   float: right;
   width: 60%;
 }
@@ -226,7 +232,7 @@ width: 40%;
   text-transform: uppercase;
 }
 
-.couses-price h5 {
+.causes-price h5 {
   color: #555;
   float: right;
   font-family: roboto;
@@ -234,25 +240,24 @@ width: 40%;
   font-weight: bold;
 }
 
-.couses-title img{
-max-width: 100%;
-margin: 0 auto;
+.causes-title img, .Volunteer-tittle img {
+  max-width: 100%;
+  margin: 0 auto;
 }
 
+.volunteer-text {
+  display: block;
+  margin-bottom: 40px;
+  overflow: hidden;
+  padding: 5px 25px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.volunteer-text h3 {
+  color: #1b1b1b;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5;
+}
 
 
 .help-us-area {
@@ -471,4 +476,8 @@ input {
 }
 .text-center {
   text-align: center !important;
+}
+
+.margin0{
+  margin: 0 0;
 }
