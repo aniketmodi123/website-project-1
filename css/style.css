@@ -86,6 +86,10 @@ a {
   padding-left: 15px;
 }
 
+img {
+  vertical-align: middle;
+}
+
 /* common css */
 .header-top {
   background: #0aaaa0 none repeat scroll 0 0;
@@ -201,7 +205,7 @@ h1.banner-title {
   font-size: 40px;
   font-weight: bold;
 }
-.banner-btn-area{
+.banner-btn-area {
   margin-right: 15px;
   margin-top: 25px;
 }
@@ -212,8 +216,7 @@ h1.banner-title {
   font-size: 14px;
   font-weight: bold;
   padding: 10px 12px;
-  margin-right:15px ;
-
+  margin-right: 15px;
 }
 
 .nivo-directionNav a {
@@ -226,75 +229,20 @@ h1.banner-title {
 }
 
 #banner-left {
-  margin-left: 160px;
+  left: 10%;
 }
 #banner-right {
-  margin-right: 160px;
-  left: 1412px;
+  left: 90%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.our-causes-area, .our-causes-area {
+.our-causes-area,
+.blog-area {
   padding: 90px 0;
 }
 
-.causes-title, .Volunteer-tittle {
+.causes-title,
+.Volunteer-title,
+.blog-title {
   width: 100%;
   margin-bottom: 40px;
   color: #333333;
@@ -302,7 +250,9 @@ h1.banner-title {
   margin-top: 10px;
   flex-direction: column;
 }
-.causes-title h2, .Volunteer-tittle h2 {
+.causes-title h2,
+.Volunteer-title h2,
+.blog-title h2 {
   color: #1b1b1b;
   font-size: 36px;
   font-weight: bold;
@@ -311,18 +261,22 @@ h1.banner-title {
   text-transform: uppercase;
 }
 
-.causes-title h2 span, .Volunteer-tittle h2 span {
+.causes-title h2 span,
+.Volunteer-title h2 span,
+.blog-title h2 span {
   color: #0aaaa0;
   font-size: 36px;
 }
 
-.single-causes, .single-volunteer {
+.single-causes,
+.single-volunteer {
   display: block;
   margin-bottom: -5px;
   overflow: hidden;
 }
 
-.causes-image img , .volunteer-image img{
+.causes-image img,
+.volunteer-image img {
   max-width: 100%;
   height: auto;
   border-style: none;
@@ -336,7 +290,8 @@ h1.banner-title {
   padding: 40px 25px;
 }
 
-.causes-text h3, .volunteer-text h3 {
+.causes-text h3,
+.volunteer-text h3 {
   color: #1b1b1b;
   font-size: 18px;
   font-weight: bold;
@@ -374,11 +329,17 @@ h1.banner-title {
   font-weight: bold;
 }
 
-.causes-title img, .Volunteer-tittle img {
+.causes-title img,
+.Volunteer-title img,
+.blog-title img {
   max-width: 100%;
   margin: 0 auto;
 }
 
+.volunteer-area {
+  color: #fff;
+  padding: 46px 0;
+}
 .volunteer-text {
   display: block;
   margin-bottom: 40px;
@@ -393,18 +354,17 @@ h1.banner-title {
   margin-bottom: 5;
 }
 
-
 .help-us-area {
   background: rgba(0, 0, 0, 0) url("../images/help-us-bg.jpg") repeat fixed 0 0;
   color: #fff;
   padding: 86px 0;
 }
 
-.help-us-tittle {
+.help-us-title {
   margin-bottom: 75px;
 }
 
-.help-us-tittle h2 {
+.help-us-title h2 {
   font-size: 36px;
   font-weight: bold;
   margin: auto;
@@ -448,6 +408,100 @@ h1.banner-title {
   padding: 0 10px;
   text-transform: uppercase;
   border-radius: 3px;
+}
+
+.single-blog {
+  border: 1px solid #efefef;
+  overflow: hidden;
+  padding-bottom: 15px;
+  transition: all 0.3s ease 0s;
+}
+
+.single-blog:hover {
+  box-shadow: #191919;
+}
+
+.blo-image-and-date {
+  position: relative;
+}
+.blo-image-and-date img {
+  max-width: 100%;
+  height: auto;
+  border-style: none;
+}
+
+.blo-image-and-date > a {
+  background: #0aaac0 none repeat scroll 0 0;
+  font-size: 14px;
+  font-weight: bold;
+  left: 0;
+  line-height: 70px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  width: 75px;
+}
+
+.blog-info {
+  padding: 11px 15px 31px;
+}
+
+.blog-info a img {
+  filter: invert(45%);
+  height: 25px;
+  padding: 2px;
+}
+
+.admin {
+  width: 50%;
+  float: left;
+}
+
+.admin > a {
+  color: #888;
+  font-size: 14px;
+}
+
+.comment {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+
+.comment > a {
+  border-right: 1px solid;
+  color: #888;
+  padding: 0 7.5px;
+}
+
+.comment > a:last-child {
+  border-right: 0px solid;
+  padding-right: 0px;
+}
+
+.blog-text {
+  padding: 15px;
+}
+
+.blog-text h3 a {
+  color: #1b1b1b;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.blog-text > a {
+  border-bottom: 1px solid #333;
+  color: #333;
+  float: right;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.blog-text > p {
+  color: #333;
+  font-size: 14px;
 }
 
 .footer-top {
@@ -612,6 +666,6 @@ input {
   text-align: center !important;
 }
 
-.margin0{
+.margin0 {
   margin: 0 0;
 }
