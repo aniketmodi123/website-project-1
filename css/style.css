@@ -156,6 +156,140 @@ a {
   text-transform: uppercase;
 }
 
+.slider-area {
+  position: relative;
+}
+
+.nivoSlider {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.nivoSlider img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  max-width: none;
+}
+
+.nivo-main-image {
+  display: block !important;
+  position: relative !important;
+  width: 100% !important;
+}
+
+.nivo-caption {
+  background: transparent none repeat scroll 0 0;
+  bottom: 0;
+  box-sizing: border-box;
+  color: #fff;
+  display: none;
+  left: 15%;
+  opacity: 0.8;
+  overflow: hidden;
+  padding: 5px 10px;
+  position: absolute;
+  top: 37%;
+  width: 50%;
+  z-index: 8;
+}
+
+h1.banner-title {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+}
+.banner-btn-area{
+  margin-right: 15px;
+  margin-top: 25px;
+}
+
+.banner-btn {
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 12px;
+  margin-right:15px ;
+
+}
+
+.nivo-directionNav a {
+  cursor: pointer;
+  font-size: 30px;
+  position: absolute;
+  color: #fff;
+  top: 45%;
+  z-index: 9;
+}
+
+#banner-left {
+  margin-left: 160px;
+}
+#banner-right {
+  margin-right: 160px;
+  left: 1412px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .our-causes-area, .our-causes-area {
   padding: 90px 0;
 }
