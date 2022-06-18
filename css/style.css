@@ -91,6 +91,8 @@ img {
 }
 
 /* common css */
+
+
 .header-top {
   background: #0aaaa0 none repeat scroll 0 0;
   line-height: 40px;
@@ -104,20 +106,26 @@ img {
   text-decoration: none;
   color: #fff;
 }
-.top-social ul li {
+.top-social ul li,
+.contact li {
   list-style: none;
 }
 
 .contact {
   width: 50%;
   justify-content: end;
-  margin-top: -10px;
 }
+
 
 .header-top .container img {
   filter: invert(100%);
-  width: 30px;
+  width: 25px;
   margin: 5px 3px;
+}
+
+.header-top .container .contact img {
+
+  margin-left: 20px;
 }
 
 .container .contact div {
