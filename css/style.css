@@ -12,18 +12,11 @@
 *,
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 17px;
+  font-size: 14px;
   text-align: left;
 }
 
-/* responsive margin */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
-}
 
-/* responsive margin */
 /* common css */
 
 footer,
@@ -55,11 +48,11 @@ ul {
 a {
   color: #fff;
   text-decoration: none;
-  transition: all 0.3s ease 0s;
+
 }
 
 .row {
-  width: 100%;
+  max-width: 100%;
   flex-wrap: wrap;
   margin: -15px 0;
 }
@@ -85,7 +78,7 @@ a {
   padding-right: 15px;
   padding-left: 15px;
 }
-.column6{
+.column6 {
   max-width: 16.67%;
   padding-right: 15px;
   padding-left: 15px;
@@ -97,7 +90,7 @@ img {
 
 /* common css */
 
-
+/* header css */
 .header-top {
   background: #0aaaa0 none repeat scroll 0 0;
   line-height: 33px;
@@ -121,15 +114,13 @@ img {
   justify-content: end;
 }
 
-
 .header-top .container i {
-  width: 25px;
+  width: 1.3vw;
   margin: 5px 3px;
 }
 
 .header-top .container .contact i {
-
-  margin-left: 20px;
+  margin: 9px;
 }
 
 .container .contact div {
@@ -137,48 +128,54 @@ img {
 }
 
 .main-logo {
-  width: 25%;
+  width: 23%;
   padding: 27px 0px;
 }
-
+.menu {
+  width: 77%;
+}
 .main-menu {
-  width: 75%;
+  float: left;
   padding: 13px 32px;
-  margin: 15px 57px;
+  margin: auto auto;
 }
 .main-menu li {
   float: left;
-  padding: 0 15px;
+  padding: 0 1vw;
   position: relative;
 }
 .main-menu li a {
   color: rgb(116, 103, 103);
   text-decoration: none;
-  font-size: 20px;
+  font-size: 3vh;
   font-weight: normal;
 }
 .donate-button {
   float: right;
+  margin-right: 2%;
 }
 .donate-button a {
   text-decoration: none;
   background: #0aaaa0 none repeat scroll 0 0;
   border: 1px solid #0aaaa0;
   color: #fff;
-  font-family: "Raleway", sans-serif;
+
   font-size: 14px;
   font-weight: bold;
   padding: 10px 15px;
   text-transform: uppercase;
 }
 
+/* header css */
+
+/* slider banner */
 .slider-area {
   position: relative;
 }
 
 .nivoSlider {
   position: relative;
-  width: 100%;
+  width: 100%1;
   height: auto;
   overflow: hidden;
 }
@@ -214,7 +211,7 @@ img {
 
 h1.banner-title {
   color: #fff;
-  font-size: 40px;
+  font-size: 2.1em;
   font-weight: bold;
 }
 .banner-btn-area {
@@ -247,14 +244,18 @@ h1.banner-title {
   left: 90%;
 }
 
+/* slider banner */
+
+/* our causes */
 .our-causes-area,
 .blog-area {
-  padding: 90px 0;
+  padding: 2em 0;
 }
 
 .causes-title,
 .Volunteer-title,
-.blog-title,.sponsors-title{
+.blog-title,
+.sponsors-title {
   width: 100%;
   margin-bottom: 40px;
   color: #333333;
@@ -264,7 +265,8 @@ h1.banner-title {
 }
 .causes-title h2,
 .Volunteer-title h2,
-.blog-title h2, .sponsors-title h2{
+.blog-title h2,
+.sponsors-title h2 {
   color: #1b1b1b;
   font-size: 36px;
   font-weight: bold;
@@ -275,19 +277,20 @@ h1.banner-title {
 
 .causes-title h2 span,
 .Volunteer-title h2 span,
-.blog-title h2 span, .sponsors-title h2 span {
+.blog-title h2 span,
+.sponsors-title h2 span {
   color: #0aaaa0;
   font-size: 36px;
 }
 
 .causes-title img,
 .Volunteer-title img,
-.blog-title img,.sponsors-title img {
+.blog-title img,
+.sponsors-title img {
   filter: invert(100%);
   max-width: 100%;
   margin: 0 auto;
 }
-
 
 .single-causes,
 .single-volunteer {
@@ -350,10 +353,13 @@ h1.banner-title {
   font-weight: bold;
 }
 
+/* our causes */
+
+/* volunteer-area */
 
 .volunteer-area {
   color: #fff;
-  padding: 46px 0;
+  padding: 3em 0;
 }
 .volunteer-text {
   display: block;
@@ -369,64 +375,15 @@ h1.banner-title {
   margin-bottom: 5;
 }
 
-.help-us-area {
-  background: rgba(0, 0, 0, 0) url("../images/help-us-bg.jpg") repeat fixed 0 0;
-  color: #fff;
-  padding: 86px 0;
-}
+/* volunteer-area */
 
-.help-us-title {
-  margin-bottom: 75px;
-}
-
-.help-us-title h2 {
-  font-size: 36px;
-  font-weight: bold;
-  margin: auto;
-}
-
-.help-icon {
-  border: 1px solid #0aaac0;
-  float: left;
-  margin-right: 30px;
-  width: 50px;
-  height: 44px;
-}
-
-.help-icon i {
-   font-size: 30px;
-}
-.help-icon span {
-  margin: 2px auto;
-}
-
-.help-text {
-  float: right;
-  width: 270px;
-}
-
-.help-text > h3 {
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.learn-more-btn {
-  border: 1px solid #fff;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 35px;
-  padding: 0 10px;
-  text-transform: uppercase;
-  border-radius: 3px;
-}
+/* blog area */
 
 .single-blog {
   border: 1px solid #efefef;
   overflow: hidden;
   padding-bottom: 15px;
-  transition: all 0.3s ease 0s;
+
 }
 
 .single-blog:hover {
@@ -515,30 +472,86 @@ h1.banner-title {
   font-size: 14px;
 }
 
+/* blog area */
 
-.brand-logo-area{
-  margin-bottom: 90px;
+/* help us area */
+
+.help-us-area {
+  background: rgba(0, 0, 0, 0) url("../images/help-us-bg.jpg") repeat fixed 0 0;
+  color: #fff;
+  padding: 5em 0;
+}
+
+.help-us-title {
+  margin-bottom: 75px;
+}
+
+.help-us-title h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: auto;
+}
+
+.help-icon {
+  border: 1px solid #0aaac0;
+  float: left;
+  margin-right: 1em;
+  width: 50px;
+  height: 44px;
+}
+
+
+
+.help-icon span {
+  margin: 2px auto;
+}
+
+.help-text {
+  float: right;
+  width: 270px;
+}
+
+.help-text > h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.learn-more-btn {
+  border: 1px solid #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 35px;
+  padding: 0 10px;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+/* help us area */
+
+/* branding */
+
+.brand-logo-area {
+  margin: 2em 0;
 }
 
 .brand-logo {
-  border: 1px solid #f2f2f2;
+  border: 1px solid #f0ebeb;
   padding: 30px 18px;
   text-align: center;
 }
-.brand-logo i{
+.brand-logo i {
   filter: invert(100%);
-  
 }
 
-.brand-logo-space{
+.brand-logo-space {
   justify-content: space-between;
 }
 
+/* branding */
 
-
-
-
-
+/* footer */
 
 .footer-top {
   background: #232323 none repeat scroll 0 0;
@@ -576,11 +589,12 @@ h1.banner-title {
   width: 30px;
 }
 
-.list-icon li:hover, .list-icon i:hover {
+.list-icon li:hover,
+.list-icon i:hover {
   padding-left: 10px;
 }
 
-.footer-col-mid nav ul li a:hover{
+.footer-col-mid nav ul li a:hover {
   color: #0aaac0;
 }
 
@@ -627,17 +641,14 @@ input {
   display: inline-block;
   font-size: 14px;
   margin-left: -5px;
-  /* padding: 6px; */
-  padding-top: 8px;
+  padding: 6px;
+  padding-top: 10px;
   text-align: center;
-  transition: all 0.3s ease 0s;
   width: 45px;
 }
-.form button img {
-  filter: invert(100%);
-  height: 25px;
-  width: 25px;
-  margin: auto 0;
+.form button i {
+  
+  margin: auto auto;
 }
 
 .footer-bottom {
@@ -658,28 +669,27 @@ input {
   justify-content: end;
 }
 .footer-social ul li i {
-  height: 25px;
-  width: 25px;
   margin: auto 6px;
 }
 
 #scrollup {
   display: inline;
   background-color: #0aaaa0;
-  bottom: 5px;
+  bottom: 40px;
   cursor: pointer;
-  height: 55px;
   position: fixed;
   right: 22px;
   text-align: center;
-  width: 54px;
+  height: 3em;
+  width: 3em;
   z-index: 9999;
-  transition: all 0.3s ease 0s;
 }
 
-.scrollup i{
- font-size: 50px;
+.scrollup i {
+  font-size: 3em;
 }
+
+/* footer */
 
 /* utility classess */
 .flex {
@@ -698,3 +708,78 @@ input {
 .margin0 {
   margin: 0 0;
 }
+
+
+/* responsive margin */
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1132px;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1200px) {
+  .container {
+    max-width: 950px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 960px){
+.container{
+  max-width: 720px;
+}}
+
+
+@media (min-width: 768px) and (max-width: 1201px) {
+  .help-icon {
+    float: none;
+    margin: auto auto 20px;
+    text-align: center;
+  }
+
+  .help-text {
+      float: none;
+      text-align: center;
+      width: 100%;
+    }
+    .help-text h3,.help-text p{
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  
+  .causes-button-and-price{
+    flex-direction: column;
+  }
+
+  .causes-button {
+    float: none;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+  }
+  .donate-btn{
+    padding: 10px 30%;
+  }
+  
+  .causes-price {
+    float: none;
+    width: 100%;
+  }
+  .causes-price h5 {
+    float: none;
+    text-align: center;
+    line-height: 60px;
+  }
+
+  .footer-col-side, .footer-col-mid  {
+    width: 50%;
+    padding-bottom: 15px;
+  }
+  
+
+}
+/* responsive margin */
