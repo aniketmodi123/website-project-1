@@ -16,7 +16,6 @@ body {
   text-align: left;
 }
 
-
 /* common css */
 
 footer,
@@ -48,7 +47,6 @@ ul {
 a {
   color: #fff;
   text-decoration: none;
-
 }
 
 .row {
@@ -126,18 +124,26 @@ img {
 .container .contact div {
   padding: 0 1.5rem;
 }
+.nav-bar {
+  display: flex;
+}
 
 .main-logo {
-  width: 23%;
+  max-width: 20%;
   padding: 27px 0px;
 }
 .menu {
-  width: 77%;
+  width: 80%;
+  display: flex;
 }
 .main-menu {
+  display: flex;
   float: left;
   padding: 13px 32px;
   margin: auto auto;
+}
+.main-menu ul {
+  display: flex;
 }
 .main-menu li {
   float: left;
@@ -147,16 +153,16 @@ img {
 .main-menu li a {
   color: rgb(116, 103, 103);
   text-decoration: none;
-  font-size: 3vh;
+  font-size: 1.5em;
   font-weight: normal;
 }
 .donate-button {
   float: right;
-  margin-right: 2%;
+  display: flex;
 }
 .donate-button a {
   text-decoration: none;
-  background: #0aaaa0 none repeat scroll 0 0;
+  background-color: #0aaaa0;
   border: 1px solid #0aaaa0;
   color: #fff;
 
@@ -164,6 +170,90 @@ img {
   font-weight: bold;
   padding: 10px 15px;
   text-transform: uppercase;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 5rem;
+  right: 1rem;
+  margin-right: 2%;
+  display: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.toggle-button .bar {
+  height: 5px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+@media (max-width: 1002px) {
+  .main-menu li {
+    padding: 0px 0.5vw;
+  }
+}
+
+@media (max-width: 960px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main-logo {
+    width: 100%;
+    padding-bottom: 9px;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .menu {
+    width: 100%;
+    display: none;
+    justify-content: center;
+  }
+  .main-menu {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .main-menu ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .main-menu li {
+    width: 100%;
+    background-color: #46c7be;
+    border-bottom: 2px solid white;
+    padding: 5px;
+    border-radius: 4px;
+    text-align: center;
+  }
+
+  .main-menu li a {
+    color: #191919;
+    letter-spacing: 2px;
+  }
+
+  .donate-button {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .donate-button a {
+    letter-spacing: 2px;
+    text-align: center;
+    width: 80%;
+    background-color: #0aaaa0;
+    margin-bottom: 5px;
+  }
 }
 
 /* header css */
@@ -175,7 +265,7 @@ img {
 
 .nivoSlider {
   position: relative;
-  width: 100%1;
+  width: 100%;
   height: auto;
   overflow: hidden;
 }
@@ -383,7 +473,6 @@ h1.banner-title {
   border: 1px solid #efefef;
   overflow: hidden;
   padding-bottom: 15px;
-
 }
 
 .single-blog:hover {
@@ -499,8 +588,6 @@ h1.banner-title {
   width: 50px;
   height: 44px;
 }
-
-
 
 .help-icon span {
   margin: 2px auto;
@@ -647,7 +734,6 @@ input {
   width: 45px;
 }
 .form button i {
-  
   margin: auto auto;
 }
 
@@ -709,7 +795,6 @@ input {
   margin: 0 0;
 }
 
-
 /* responsive margin */
 
 @media (min-width: 1200px) {
@@ -724,11 +809,11 @@ input {
   }
 }
 
-@media (min-width: 768px) and (max-width: 960px){
-.container{
-  max-width: 720px;
-}}
-
+@media (min-width: 768px) and (max-width: 960px) {
+  .container {
+    max-width: 800px;
+  }
+}
 
 @media (min-width: 768px) and (max-width: 1201px) {
   .help-icon {
@@ -738,19 +823,19 @@ input {
   }
 
   .help-text {
-      float: none;
-      text-align: center;
-      width: 100%;
-    }
-    .help-text h3,.help-text p{
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  .help-text h3,
+  .help-text p {
     display: inline-block;
     text-align: center;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  
-  .causes-button-and-price{
+  .causes-button-and-price {
     flex-direction: column;
   }
 
@@ -761,10 +846,10 @@ input {
     display: block;
     margin-top: 10px;
   }
-  .donate-btn{
+  .donate-btn {
     padding: 10px 30%;
   }
-  
+
   .causes-price {
     float: none;
     width: 100%;
@@ -775,11 +860,10 @@ input {
     line-height: 60px;
   }
 
-  .footer-col-side, .footer-col-mid  {
+  .footer-col-side,
+  .footer-col-mid {
     width: 50%;
     padding-bottom: 15px;
   }
-  
-
 }
 /* responsive margin */
