@@ -16,6 +16,9 @@ body {
   text-align: left;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 /* common css */
 
 footer,
