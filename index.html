@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/6d62ca5404.js" crossorigin="anonymous"></script>
     <script defer src="./java_script/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 
 
     <title>life Foundation</title>
@@ -101,7 +103,17 @@
 
 
         <div class="nivoSlider">
-            <img class="nivo-main-image" src="./images/slide-one.jpg" style="width: 1583px; height: auto;">
+            <div class="slides">
+                <img class="nivo-main-image" src="./images/slide-one.jpg" style="width: 1583px; height: auto;">
+            </div>
+            <div class="slides">
+                <img class="nivo-main-image" src="./images/slide-two.jpg" style="width: 1583px; height: auto;">
+            </div>
+            <div class="slides">
+                <img class="nivo-main-image" src="./images/slide-three.jpg" style="width: 1583px; height: auto;">
+            </div>
+
+
             <div class="container">
                 <div class="row flex">
                     <div class="nivo-caption" style="display: block;">
@@ -119,9 +131,14 @@
                     </div>
                 </div>
                 <div class="nivo-directionNav">
-                    <a id="banner-left"><i class="fa-solid fa-angle-left"></i> </a>
-                    <a id="banner-right"> <i class="fa-solid fa-angle-right"></i></a>
+                    <a id="banner-left" onclick="controler(-1)"><i class="fa-solid fa-angle-left"></i> </a>
+                    <a id="banner-right" onclick="controler(1)"> <i class="fa-solid fa-angle-right"></i></a>
                 </div>
+            </div>
+            <div class="nivo-controlNav">
+                <a class="nivo-control"></a>
+                <a class="nivo-control"></a>
+                <!-- <a class="nivo-control"></a> -->
             </div>
         </div>
 

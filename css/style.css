@@ -16,7 +16,7 @@ body {
   text-align: left;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 /* common css */
@@ -273,17 +273,12 @@ img {
   overflow: hidden;
 }
 
-.nivoSlider img {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  max-width: none;
-}
-
 .nivo-main-image {
-  display: block !important;
   position: relative !important;
   width: 100% !important;
+}
+.slides {
+  display: none;
 }
 
 .nivo-caption {
@@ -335,6 +330,23 @@ h1.banner-title {
 }
 #banner-right {
   left: 90%;
+}
+.slider-area .nivo-controlNav {
+  bottom: 1%;
+  left: 48%;
+  position: absolute;
+  z-index: 9;
+}
+.slider-area .nivo-controlNav a {
+  background: #ebebeb none repeat scroll 0 0;
+  border-radius: 100%;
+  border: 3px solid #acacac;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0;
+  height: 13px;
+  margin: 0 3px;
+  width: 13px;
 }
 
 /* slider banner */
@@ -627,9 +639,13 @@ h1.banner-title {
 }
 
 .brand-logo {
-  border: 1px solid #f0ebeb;
+  border: 1px solid #ffffff;
+
   padding: 30px 18px;
   text-align: center;
+}
+.brand-logo:hover {
+  border: 1px solid #e0dddd;
 }
 .brand-logo i {
   filter: invert(100%);

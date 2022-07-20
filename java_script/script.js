@@ -10,6 +10,48 @@ cont.addEventListener("click", () => {
   }
 });
 
+// by the help of jquery
+// $(document).ready(function(){
+
+  
+//   $(".toggle-button").click(function(){
+//     $(".menu").toggle();
+//   });
+// });
+
+
+let flag = 0;
+function controler(x) {
+  flag = flag + x;
+  console.log(flag);
+  
+  slideshow(flag);
+}
+
+slideshow(flag);
+function slideshow(num) {
+  let slides = document.getElementsByClassName("slides");
+  let SliderDotes = document.getElementsByClassName("nivo-control");
+  if (num == slides.length) {
+    num = 0;
+    flag = 0;
+  }
+  if (num < 0) {
+    flag = slides.length - 1;
+    num = slides.length - 1;
+  }
+
+  for (let y of slides) {
+    y.style.display = "none";
+  }
+  for (let y of SliderDotes) {
+    y.style.border = "3px solid #acacac";
+  }
+  slides[num].style.display = "block";
+  SliderDotes[num].style.border = "3px solid #0aaaa0";
+  console.log(SliderDotes);
+}
+
 
 function createBlogBox() {
   fetch("java_script/data.json")
